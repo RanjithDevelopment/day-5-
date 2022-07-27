@@ -1,0 +1,217 @@
+QUSTION NO 1 :
+
+a) print the odd numbers in array using anonymous and iffie functions =>
+
+ Anonymous -----
+var res=[];
+var anmys=function(a){
+for(i=0;i<=a.length;i++){
+
+if(a[i]%2==1){
+res.push(a[i]);
+
+}
+}
+console.log(res);
+}
+var num = userInput[0].split(" ");
+anmys(num);
+
+  -----------------------
+
+iffie ---------
+(function odd(){
+var res =[];
+for(i=0;i<=a.length;i++){
+
+if(a[i]%2==1){
+res.push(a[i]);
+
+}
+}
+console.log(res);
+}
+var num = userInput[0].split(" ");
+
+})
+(num);
+----------------------------------------------------------------------------------------------------------------------
+b ) to convert tittle caps in string array =>
+
+annonymous =>
+
+var anmy= function(a){
+var res=a.replace(/\b[a-z]/g, (x) => x.toUpperCase())
+
+
+console.log(res);
+}
+anmy(userInput[0]);
+----------------------
+iffie =>
+
+(function upcase(a){
+var res=a.replace(/\b[a-z]/g, (x) => x.toUpperCase())
+
+
+console.log(res);
+})
+anmy(userInput[0]);
+-------------------------------------------------------------------------------------------------------------------------
+
+c ) sum of all numbers in array 
+
+var sum = function(....a){
+
+var sum = 0;
+
+for(i=0;i<=a.length;i++){
+sum = sum+ a[i];
+
+}
+console.log(sum);
+}
+var num=userInput[0].map(Number);
+sum(num);
+----------------------------------
+
+iffie =>(function (...a){
+
+var sum = 0;
+
+for(i=0;i<=a.length;i++){
+sum = sum+ a[i];
+
+}
+console.log(sum);
+})
+var num=userInput[0].map(Number);
+(num);
+------------------------------------------------------------------------------------------------------------------------
+
+d  ) return all the prime numbers in array 
+
+anonymous =>
+
+var numArray =[2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+var anmy=function(){
+numArray = numArray.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) return false;
+  }
+  return true;
+  }
+  console.log(numArray(numArray));
+}
+anmy();
+ --------------------------------------------------
+
+iffie =>
+var numArray =[2, 3, 4, 5, 6, 7, 8, 9, 10];
+(function (number){
+numArray = numArray.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++) {
+    if (number % i === 0) return false;
+  }
+  return true;
+  }
+console.log(numArray);
+}
+();
+----------------------------------------------------------------------------------------------------------------------------
+E ) to find palindrome in a array //
+
+anonymous function =>
+
+var anmy = function(str) {
+ var splitted = str.split("");
+ var reversed = splitted.reverse("");
+ var joined = reversed.join("");
+ return joined.toLowerCase().replace(/[^0-9a-z]/gi, '') == str.toLowerCase().replace(/[^0-9a-z]/gi, '')
+}
+console.log(anmy(userInput[0]));
+
+--------------------------------------
+IFFIE FUNCTION =>
+
+(function(str) {
+ var splitted = str.split("");
+ var reversed = splitted.reverse("");
+ var joined = reversed.join("");
+ return joined.toLowerCase().replace(/[^0-9a-z]/gi, '') == str.toLowerCase().replace(/[^0-9a-z]/gi, '')
+})
+(userInput[0]);
+
+--------------------------------------------------------------------------------------------------------------------------------------
+
+g ) remove the duplicates of array =>
+
+anonymous function ==>  var anmy=function(array){
+                    let dup = [...new Set(array)];
+                    console.log(dup);
+                    }
+                    anmy(userInput[0]);
+------------------------------------------------------------------
+IFFIE Functiion =>
+
+(function(array){
+ let dup = [...new Set(array)];
+                    console.log(dup);
+}
+(userInput[0]);
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+h  ) rotate the array by K times ////
+
+Anonymous Function=>
+var sample=function (a, n, k)
+{
+
+	k = k % n;
+
+	for (let i = 0; i < n; i++) {
+		if (i < k) {
+
+			console.log(a[n + i - k] + " ");
+		}
+		else {
+
+			console.log((a[i - k]) + " ");
+		}
+	}
+	console.log("<br>");
+}
+
+let Array = [1, 2, 3, 4, 5];
+let N = Array.length;
+let K = 2;
+
+sample(Array, N, K);
+------------------------------------------------------------------------------------
+IFFIE FUnvtion =>>
+(function(a,n,k){
+
+
+	k = k % n;
+
+	for (let i = 0; i < n; i++) {
+		if (i < k) {
+
+			console.log(a[n + i - k] + " ");
+		}
+		else {
+
+			console.log((a[i - k]) + " ");
+		}
+	}
+	console.log("<br>");
+}
+
+let Array = [1, 2, 3, 4, 5];
+let N = Array.length;
+let K = 2;
+(Array,N,K);
+
+
+
